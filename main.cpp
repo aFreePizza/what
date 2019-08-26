@@ -45,11 +45,10 @@ int main()
         cout << v[i] << " ";
     }
     cout << endl;
-    cout << "Mediana: ";
     if (v.size()%2==0)
-        cout << (v[v.size()/2] + v[v.size()/2 - 1])/2;
+        cout << "Mediana: " << (v[v.size()/2] + v[v.size()/2 - 1])/2;
     else
-        cout << v[(v.size()-1)/2];
+        cout << "Mediana: " << v[(v.size()-1)/2];
 
 
     return 0;
