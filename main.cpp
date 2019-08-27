@@ -45,12 +45,9 @@ int main()
         cout << v[i] << " ";
     }
     cout << endl;
-    cout << "Mediana: ";
-    if (v.size()%2==0)
-        cout << (v[v.size()/2] + v[v.size()/2 - 1])/2;
-    else
-        cout << v[(v.size()-1)/2];
-
+    
+    double mediana = (v.size()%2==0) ? (v[v.size()/2] + v[v.size()/2 - 1])/2 : v[(v.size()-1)/2];
+    cout << "Mediana: " << mediana << endl;
 
     return 0;
 }
